@@ -12,7 +12,7 @@ class Qor < Formula
      src = buildpath/"src/github.com/qordobacode/cli-v2"
      src.install buildpath.children
      src.cd do
-       system "go", "build", "-mod", "vendor", "-ldflags", "\"-w -s -X github.com/qordobacode/cli-v2/cmd/info.VersionFlag=0.7.2\"", "-o", "#{bin}/qor"
+       system "go", "build", "-mod", "vendor", "-ldflags", "\"-w -s -X 'github.com/qordobacode/cli-v2/cmd/info.VersionFlag=0.7.2'\"", "-o", "#{bin}/qor"
        prefix.install_metafiles
      end
    end

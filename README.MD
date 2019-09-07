@@ -17,7 +17,7 @@
     brew audit --strict qor
 5. Install from source     
    ```bash
-    sudo chmod 644 /home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/qor.rb
+    sudo chmod 644 /home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/qordobacode/homebrew-qor/qor.rb
     brew install --build-from-source qor
     ```
 6. Remove qor    
