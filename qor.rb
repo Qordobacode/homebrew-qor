@@ -1,8 +1,8 @@
 class Qor < Formula
    desc "Cli v2 (using Go)"
    homepage "https://github.com/Qordobacode/Cli-v2"
-   url "https://github.com/Qordobacode/Cli-v2/archive/v0.7.4.tar.gz"
-   sha256 "469ea2c705844cdc07f379addc788504dc228f87586c7d62203302367e09e161"
+   url "https://github.com/Qordobacode/Cli-v2/archive/v0.7.5.tar.gz"
+   sha256 "4d81f8d8b3f18a496f138c5690ceb13a81eb4bba1e698cf57b0f79178b35e190"
    head "https://github.com/Qordobacode/Cli-v2.git"
 
    depends_on "go" => :build
@@ -12,7 +12,7 @@ class Qor < Formula
      src = buildpath/"src/github.com/qordobacode/cli-v2"
      src.install buildpath.children
      src.cd do
-       system "go", "build", "-mod", "vendor", "-ldflags", "\"-w -s -X 'github.com/qordobacode/cli-v2/cmd/info.VersionFlag=0.7.4'\"", "-o", "#{bin}/qor"
+       system "go", "build", "-mod", "vendor", "-ldflags", "\"-w -s -X 'github.com/qordobacode/cli-v2/cmd/info.VersionFlag=0.7.5'\"", "-o", "#{bin}/qor"
        prefix.install_metafiles
      end
    end
